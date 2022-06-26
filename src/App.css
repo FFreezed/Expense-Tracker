@@ -18,24 +18,25 @@
 .minus {
   background-color: red;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 10px 20px;
-  margin-right: 5px;
 }
 
 .plus {
   background-color: greenyellow;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 10px 20px;
-  margin-right: 5px;
 }
 
 .price-list {
-  margin-top: 20px;
-  display: grid;
+  margin:auto;
+  margin-top: 10px;
+  display: flex;
   justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  width: 25%;
+  border-style: solid;
 }
 
 .remove-price {

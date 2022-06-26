@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Form from "./components/Form";
+import PriceList from "./components/PriceList";
+import "./App.css";
 
 function App() {
+  const [amount, setAmount] = useState([]);
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    let temp = 0;
+    for (let i = 0; i < amount.length; i++) {
+      temp += parseInt(amount[i].price);
+    }
+
+    setTotal(temp);
+  }, [amount]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header total={total} />
+      <Form amount={amount} setAmount={setAmount} />
+      <PriceList amount={amount} setAmount={setAmount} />
     </div>
   );
 }

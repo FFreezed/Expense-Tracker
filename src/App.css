@@ -1,18 +1,50 @@
+body {
+  color: white;
+  background-color: #181424;
+  font-size: 25px;
+}
+
 .App {
   text-align: center;
 }
 
 .form-control {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 10px;
+  width: 20%;
+}
+
+label {
+  font-size: 18px;
 }
 
 .form-input {
   margin-top: 20px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .form-submit {
-  margin-top: 10px;
+  margin-top: 5px;
+  background: #0066A2;
+  color: white;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 35px;
+  font: bold15px arial,sans-serif;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-color: #145378;
 }
 
 .minus {
@@ -20,6 +52,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
+  color: black;
 }
 
 .plus {
@@ -27,6 +60,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
+  color: black;
 }
 
 .price-list {
@@ -36,7 +70,6 @@
   justify-content: center;
   flex-direction: column;
   width: 25%;
-  border-style: solid;
 }
 
 .remove-price {

@@ -16,7 +16,14 @@ function Form({ amount, setAmount }) {
 
   const AddAmount = e => {
     e.preventDefault();
-    if(price.current.value === '') return;
+    if(price.current.value === '') {
+      alert('Tolong masukkan angka!');
+      return;
+    }
+    if(price.current.value === '0') {
+      alert('Tidak boleh diisi dengan 0');
+      return;
+    }
 
     setAmount([...amount, {
       "price": price.current.value

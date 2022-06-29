@@ -5,8 +5,8 @@ function Header({total}) {
 
   return (
     <header>
-      <h3>Expense Tracker</h3>
-      <div className="total">Saldo Anda : {sign}Rp{Math.abs(total)}</div>
+      <h3 className='header'>Expense Tracker</h3>
+      <div className="total">Saldo Anda : <span className='saldo'>{sign}Rp{Math.abs(total)}</span></div>
       {/* <div className="total">Saldo Anda : Rp{total}</div> */}
     </header>
   )

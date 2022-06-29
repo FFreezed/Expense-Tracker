@@ -8,10 +8,13 @@ function Price({ amount, index, removeAmount}) {
   const sign = amount.price < 0 ? '-' : '+';
 
   return (
+    <>
     <div className={amount.price < 0 ? 'minus' : 'plus'}>
-      <button className="remove-price" onClick={() => removeHandle(index)}>X</button>
+      <a className="remove-price" onClick={() => removeHandle(index)}>x</a>
       <div className="list">{sign}Rp{Math.abs(amount.price)}</div>
     </div>
+    </>
+    
   )
 }
 

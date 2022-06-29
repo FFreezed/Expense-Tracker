@@ -9,6 +9,7 @@ function PriceList({ amount, setAmount }) {
 
   return (
     <div className='price-list'>
+      <h3>Catatan</h3>
       {
         amount.map((value, index) => (
           <Price 

@@ -11,7 +11,6 @@ function Form({ amount, setAmount }) {
   // const getPrice = (e) => {
   //   setAmount(e.target.value);
   // }
-
   const price = useRef(null);
 
   const AddAmount = e => {

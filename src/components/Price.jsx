@@ -12,7 +12,7 @@ function Price({ amount, index, removeAmount}) {
   return (
     <>
     <div className={amount.price < 0 ? 'minus' : 'plus'}>
-      <a className="remove-price" onClick={() => removeHandle(index)}>x</a>
+      <span className="remove-price" onClick={() => removeHandle(index)}>x</span>
       <span className={amount.price < 0 ? 'out' : 'in'}>{text}</span>
       <div className="list">{sign}Rp{Math.abs(amount.price)}</div>
     </div>

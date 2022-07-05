@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 
 function Form({ amount, setAmount }) {
-  //get price value from input field
   //addAmount handler
   // const addAmount = (e) => {
   //   e.preventDefault();

@@ -1,15 +1,6 @@
 import React, { useRef } from 'react';
 
 function Form({ amount, setAmount }) {
-  //addAmount handler
-  // const addAmount = (e) => {
-  //   e.preventDefault();
-  //   setAmount(amount + 1);
-  // }
-
-  // const getPrice = (e) => {
-  //   setAmount(e.target.value);
-  // }
   const price = useRef(null);
 
   const AddAmount = e => {
